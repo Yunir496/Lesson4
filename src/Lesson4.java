@@ -1,7 +1,9 @@
 import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
+    /*1. Создать программу определения меньшего, среднего и большего возраста.
+    Пользователь вводит в программу 3 РАЗНЫХ целых числа(возраста).
+    Программа должна определить какой возраст меньший, больший, и средний. У нас не может быть 2х одинаковых возрастов.*/
 public class Lesson4 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -9,7 +11,7 @@ public class Lesson4 {
         int a = Integer.parseInt(reader.readLine());
         int b = Integer.parseInt(reader.readLine());
         int c = Integer.parseInt(reader.readLine());
-                    //if-else
+                    //if-else 1 способ
         if (a > b && a > c) {
             System.out.println("Максимальный возраст " + a);
             if (b > c) {
@@ -40,7 +42,7 @@ public class Lesson4 {
         }
     }
 }
-                // Сортировка массива
+                // Сортировка массива 2 способ
 
             //int[] array = new int[]{a,b,c};
            // Arrays.sort(array);
